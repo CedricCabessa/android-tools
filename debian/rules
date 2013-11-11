@@ -38,6 +38,8 @@ endif
 	$(MAKE) -f $(M)/fastboot.mk -C builddir/fastboot
 	mkdir -p builddir/ext4_utils
 	$(MAKE) -f $(M)/ext4_utils.mk -C builddir/ext4_utils
+	mkdir -p builddir/aapt
+	$(MAKE) -f $(M)/aapt.mk -C builddir/aapt
 
 override_dh_install:
 	dh_install

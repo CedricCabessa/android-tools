@@ -1,0 +1,23 @@
+From: =?UTF-8?q?C=C3=A9dric=20Cabessa?= <ced@ryick.net>
+Subject: [PATCH] use system libexpat
+
+---
+ base/tools/aapt/StringPool.h | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/base/tools/aapt/StringPool.h b/base/tools/aapt/StringPool.h
+index 16050b2..d501008 100644
+--- a/base/tools/aapt/StringPool.h
++++ b/base/tools/aapt/StringPool.h
+@@ -21,7 +21,7 @@
+ #include <ctype.h>
+ #include <errno.h>
+ 
+-#include <libexpat/expat.h>
++#include <expat.h>
+ 
+ using namespace android;
+ 
+-- 
+1.8.1.2
+

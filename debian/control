@@ -6,6 +6,8 @@ Uploaders: Loïc Minier <lool@debian.org>,
            Marcin Juszkiewicz <marcin.juszkiewicz@linaro.org>
 Build-Depends: debhelper (>= 9),
                libcap-dev,
+               libexpat1-dev,
+               libpng12-dev,
                libselinux-dev,
                libssl-dev,
                python,
@@ -68,3 +70,14 @@ Description: Android ext4 utilities with sparse support
  .
  This package provides the utilities to deal with Android sparse ext4
  images.
+
+Package: android-tools-aapt
+Architecture: linux-any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: Android Asset Packaging Tool
+ The Android Asset Packaging Tool (aapt) takes your application resource
+ files, and compiles them. It can also be used to extract those resources from
+ an APK file.
+ .
+ This package provides the aapt command-line tool.
+
